@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+	<script src="./main.js"></script>
+    </head>
+    <body>
+	
+	<h3>Get Element By Id Example</h3>
+	<p id='p1'> This paragraph has some meaning to it. </p>
+
+	<h3 id="h1"> Current Header </h3>
+	<p id="p2"> Current Paragraph </p>
+
+	<script src="./main.js"></script>
+
+	<h3>Hello World to JS</h3>
+	<p id="t1">This is the text</p>
+
+	<script>
+	 let t = document.getElementById('t1').textContent;
+	 console.log(t);
+	 alert(t);
+	</script>
+
+	<h3 id="t2"> Please color this content </h3>
+
+	<script>
+	 let c = document.getElementById("t2");
+	 alert(c.textContent);
+	 c.style.color = "blue";
+	 c.style.border = "solid";
+	</script>
+    </body>
+</html>
