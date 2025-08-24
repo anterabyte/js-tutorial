@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Mine Website</title>
+  </head>
+  <body>
+    
+      <button onclick='alert("Hello World")'>Press Me</button>
+      <!-- onclick is the event which will be triggered, alert is the action which will be executed. -->
+      <!-- There many events that can be use as attribute in HTML and these events can have action and scripts assign to them to run if the event is triggered -->
+      <br />
+      <!-- For Ex -->
+      <img src="https://blob.sololearn.com/courses/shore.jpg" onclick='alert("Ok this Message is here")' >  
+      <img src="https://blob.sololearn.com/courses/shore.jpg" onclick="width=500" >
+      <br />
+      <!-- Change image url if clicked on the image -->
+      <img src="https://blob.sololearn.com/courses/shore1.jpg" onclick='src="https://blob.sololearn.com/courses/shore.jpg"'>
+      <br />
+      <!-- The code below uses two buttons to change the image displayed on the page. -->
+      <img id="robot" src="https://blob.sololearn.com/courses/robot-c.jpg"><br>
+      <button onclick="robot.src='https://blob.sololearn.com/courses/robot-l.jpg'">Left</button>
+      <button onclick="robot.src='https://blob.sololearn.com/courses/robot-r.jpg'">Right</button>
+      <br />
+      <p onclick="alert('submitted')">paragraph</p>
+  </body>
+</html>
