@@ -15,9 +15,9 @@ let mysmallnum = Number.MIN_VALUE // to get smallest number in the number
 let mylargenum = Number.MAX_VALUE // to get largest number
 
 let posinfinity = Number.MAX_VALUE + Number.MAX_VALUE //create positive infinite number
-let neginfinity = -Number.MIN_VALUE - Number.MAX_VALUE // creates negative infinite number
+let neginfinity = -Number.MAX_VALUE -Number.MAX_VALUE // creates negative infinite number
 
-let nan = "a"/2 // since "a"/2 is not possible as "a" is string and 2 is int, so its type is NaN -> Not a Number. NaN has 2 properties any Operation with is equal to NaN and NaN and NaN is not equal
+let nan = "a"/2 // since "a"/2 is not possible as "a" is string and 2 is int, so its type is NaN -> Not a Number. NaN has 2 properties "any Operation NaN with is equal to NaN" and "NaN and NaN is not equal".
 
 console.log(NaN/2) // NaN
 console.log(NaN == NaN) // false
