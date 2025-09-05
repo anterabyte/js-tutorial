@@ -125,12 +125,64 @@ console.log(currentEnergy);
 // Divident = divisor * quotient + remainder
 
 let rem = 5 % 2
-console.log(rem) // 1
+console.log(rem) ; // 1
 
-rem = 5 % -2 // 1, Positive divident
+rem = 5 % -2 ; // 1, Positive divident
 
-rem = -5 % -2 // -1, negative dicident
+rem = -5 % -2 ; // -1, negative dicident
 
-rem = -5 % 3 // -2, negative divident
+rem = -5 % 3 ; // -2, negative divident
+
+rem = Infinity % 2 ; // NaN
+
+rem = 10 % 0 ; // NaN
+
+rem = Infinity % Infinity ; // NaN
+
+rem = 10 % Infinity ; // 10
+
+rem = 0 % 10 ;  // 0
+
+// If either dividend or divisor is not a number, it’s converted to a number using the Number() function and applied the above rules. For example:
+
+rem = "10" % 3 ;
+
+let num = 13 ;
+let checkOdd = num % 2 == 1 // Yes
+console.log(checkOdd) // true
+
+function isOdd(num) {
+    return num%2 == 1
+}
+
+const isItOdd = (num) => num % 2 == 1;
+
+
+/*
+   In JavaScript, the remainder operator (%) is not the modulo operator. If you have been working with Python, you may find the % represents the modulo operator. However, this is not the case in JavaScript. To get a modulo in JavaScript, you use the following expression:
+
+((dividend % divisor) + divisor) % divisor
+
+Alternatively in JS, 
+const mod = (dividend, divisor) => ((dividend % divisor) + divisor) % divisor;
+ */
+
+const mod = (divident, divisor) => ((divident % divisor) + divisor )% divisor ;
+const rem1 = (divident, divisor) => divident % divisor 
+
+
+let num1 = 5,
+    num2 = 3 ;
+
+console.log(rem(5,3))
+console.log(mod(5,3))
+
+num1 = -5;
+num2 = 3;
+
+console.log(rem(num1, num2)) ;// -2
+console.log(mod(num1, num2)) ;// 1
+
+
 
 
