@@ -1,0 +1,62 @@
+
+/* JavaScript unary operators work on one value. The following table shows the unary operators and their meanings:
+Unary  Operators Name	                  Meaning
+   +x	Unary Plus	                Convert a value into a number
+  -x	Unary Minus	                Convert a value into a number and negate it
+  ++x	Increment Operator (Prefix)	Add one to the value
+  --x	Decrement Operator (Prefix)	Subtract one from the value
+  x++	Increment Operator (Postfix)	Add one to the value
+  x--	Decrement Operator (Postfix)	Subtract one from the value */
+
+// Unary plus
+let x = 10
+let y = +x // In genral for num type values unary plus does nothing
+
+let z = true 
+y = +z // But for boolean values it converts them with Number(), like true => 1 and false => 0
+
+let w = "10"
+y = +w // Convert string to appropriate rules, Ex- here y => 10
+
+let obj = {
+    Name: "Ram prakash",
+    toString: function () {
+	return '20'
+    } 
+}
+
+y = +obj // o/p => 20 , In this example, we apply the unary plus operator (+) on the person object that has the toString() method, JavaScript engine calls toString() method to get the value ('25') and convert it into a number.
+
+obj.valueOf = function() { return "25"};
+
+y = +obj // o/p => 25, In this example, the person object has the valueOf() method, the JavaScript engine calls it instead of the toString() method to get the value to convert. 
+
+
+// Unary minus -> Everything what unary plaus does with result in negative sign
+
+
+// Increament operator (prefix) -> Value of the variable increases before statement execution.
+
+let age = 23
+console.log(++age) // 24
+
+// prefix increament is equal to -> x++ => x = x+1
+
+newAge = ++age + 5 // ++age => 25
+console.log(newAge) // 30
+
+
+
+// Increament operator (postfix) -> Values of variable increase after statement execution.
+
+let age1 = 12
+console.log(age1++) // 12
+console.log(age1) // 13
+
+// For Decrement operator (prefix and postfix), the same rules for increament operator will apply
+
+// When applying the increment/decrement operator to a non-numeric value, it performs the following steps :, First, convert the value into a number using the same rules as the unary plus (+) operator. Then, add one to or subtract one from the value.
+
+
+
+
